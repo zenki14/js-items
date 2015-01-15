@@ -33,15 +33,15 @@ console.log ('The average price is ' + avgPrice)
 //   	}	
 //   });
 
-var betweenCost = items.map (function(a) {
+var betweenCost = items.filter (function(a) {
   if(a.price <= 18 && a.price >= 14 ) {
    return a.title; }
    // console.log(betweenCost.title)
 });
 
-var betweenCostTrue = betweenCost.map (function(a) {
-	if (a.title === true) {
-		return a.title; }
-	});
+// var betweenCostTrue = betweenCost.map (function(a) {
+// 	if (a.title === true) {
+// 		return a.title; }
+// 	});
 // console.log(betweenCost.title);
 // console.log (betweenCost.map)
