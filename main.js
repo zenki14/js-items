@@ -32,22 +32,12 @@ console.log ('The average price is ' + avgPrice)
 //   	console.log (blah)
 //   	}	
 //   });
-
-var betweenCost = items.filter (function(a) {
+var arrCost = [];
+var betweenCost = items.forEach (function(a) {
   if(a.price <= 18 && a.price >= 14 ) {
-   return a.title; }
+		arrCost.push('Item : ' + a.title)  }
    // console.log(betweenCost.title)
 });
-console.log ('The Items that cost between $14 and $18 are: ' + betweenCost[0].title + '///// '
- + betweenCost[1].title + '///// '
- + betweenCost[2].title + '///// ' 
- + betweenCost[3].title + '///// ' 
- + betweenCost[4].title);
+console.log('The items that meet the requirements are: ' + arrCost)
 
-// var betweenCostConsole = 
-// var betweenCostTrue = betweenCost.map (function(a) {
-// 	if (a.title === true) {
-// 		return a.title; }
-// 	});
-// console.log(betweenCost.title);
-// console.log (betweenCost.map)
+
