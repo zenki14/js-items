@@ -38,7 +38,13 @@ var betweenCost = items.filter (function(a) {
    return a.title; }
    // console.log(betweenCost.title)
 });
+console.log ('The Items that cost between $14 and $18 are: ' + betweenCost[0].title + ', '
+ + betweenCost[1].title + ', '
+ + betweenCost[2].title + ', ' 
+ + betweenCost[3].title + ', ' 
+ + betweenCost[4].title);
 
+// var betweenCostConsole = 
 // var betweenCostTrue = betweenCost.map (function(a) {
 // 	if (a.title === true) {
 // 		return a.title; }
