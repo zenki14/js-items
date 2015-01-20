@@ -193,5 +193,14 @@ var filterLongWords = function (words, i) {
 // ---------------------
 
 function charFreq(string){
-    //...
-}
+    var array = string.split("");
+    var frequency = {};
+    console.log(array.indexOf("a"));
+   
+    array.forEach(function(element){
+        if (!frequency[element]) {frequency[element] = 0};
+        frequency[element] += 1;  
+    })
+    return frequency
+// console.log(charFreq("abbabcbdbabdbdbabababcbcbab"));
+};
