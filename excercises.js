@@ -119,7 +119,7 @@ function sum(numbers) {
 };
 
 function multiply(numbers) {
-    var addMultiply = numbers.reduce(function(x, y) { return x * y} );
+    var addMultiply = numbers.reduce(function(x, y) { return x * y } );
     return addMultiply;
 
 };
@@ -168,9 +168,25 @@ function findLongestWord(words){
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
+// var compCount = [];
+// function filterLongWords(words, i){
+//     if(words > i) {
+//         compCount.push(words) {
+//             else null;
+//         }
+//     }
+// };
+// var words = ["hello", "yoyohomie", "killa", "yo"];
+// var i = [3];
 
-function filterLongWords(words, i){
-    }
+var filterLongWords = function (words, i) {
+    var newArray = [];
+    words.forEach(function (element) {
+        if( element.length > i ) { newArray.push(element)};
+    });
+    return newArray;
+};
+// console.log(filterLongWords(["paul", "dane", "cigarette", "beer"], 5));
 
 // ---------------------
 // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
